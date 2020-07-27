@@ -1,0 +1,17 @@
+{
+  "name": "express-mount-tracker",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/express-mount-tracker.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grisson2/express-mount-tracker.git"
+  },
+  "author": "Ivan Vaccari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/grisson2/express-mount-tracker/issues"
+  },
+  "homepage": "https://github.com/grisson2/express-mount-tracker#readme"
+}
