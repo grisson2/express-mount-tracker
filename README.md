@@ -59,7 +59,7 @@ this package introduces another way the user can define express routes:
 **app.[get|post|delete|path|put](object, callback [, callback ...])**
 
 
-where objeck have the following signature:
+where object have the following signature:
 ```
 {
     id: string, helper to identify later this particular route
@@ -69,7 +69,7 @@ where objeck have the following signature:
 
 ```
 
-It keeps the sema behavior of standard express **app.[get|post|delete|path|put]** but add exta info in the final mountpoints object
+It keeps the same behavior of standard express **app.[get|post|delete|path|put]** but add exta info in the final mountpoints object
 
 Example:
 ```
