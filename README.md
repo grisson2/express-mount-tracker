@@ -1,9 +1,10 @@
 # express-mount-tracker
 
 A tracker for mounted routes in expressjs.
-This package applied to a express router or app instance register every yimer the user write down a use, get, post, patch, delete and put, then create an array of mounted routes. It can also add custom data to a route so the user can later iterate over the resulting array and retrieve custom data in order to create a documentation or statistical report.
+This package applied to a express router (or app instance), register every time the user write down a *use, get, post, patch, delete and put*, then create an array of mounted routes. It can also add custom data to a route so the user can later iterate over the resulting array and retrieve it.
 
-To start registreing the mounts, you need to wrap the standard express app or router with express-mount-tracker:
+To start registering the mounts, you need to wrap the standard express app or router with express-mount-tracker:
+
 ```
 const express = require('express');
 const app = require('express-mount-tracker')(express());
@@ -29,8 +30,6 @@ app.listen(3000)
 
 
 **Example with router**
-
-Router will also be ancapsulated under express-mount-tracker
 
 ```
 const express = mitownRequire('express');
