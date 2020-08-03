@@ -110,4 +110,4 @@ $ npm install express-mount-tracker
 
 ### License
 
-MIT
+[MIT](https://github.com/grisson2/express-mount-tracker/blob/master/LICENSE)
