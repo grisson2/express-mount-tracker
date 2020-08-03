@@ -41,7 +41,7 @@ app.listen(3000)
 **Example with router**
 
 ```
-const express = mitownRequire('express');
+const express = require('express');
 const app = require('express-mount-tracker')(express());
 const router = require('express-mount-tracker')(express.Router());
 
@@ -81,7 +81,7 @@ It keeps the same behavior of standard express **app.[get|post|delete|path|put]*
 
 Example:
 ```
-const express = mitownRequire('express');
+const express = require('express');
 const app = require('express-mount-tracker')(express());
 const router = require('express-mount-tracker')(express.Router());
 
