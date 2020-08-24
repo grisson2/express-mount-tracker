@@ -49,13 +49,13 @@ router.get('/mario', function (req, res) {
   res.send('Hello, its-a me, Mario!')
 })
 
-app.use('/itsame', router);
+app.use('/its-a-me', router);
 
 app.get('/hello', function (req, res) {
   res.send('Hello World')
 })
 
-console.log(app.mountedRoutes) // prints [{path:'/itsame/mario', method:'get'}, {path:'/hello', method:'get'}]
+console.log(app.mountedRoutes) // prints [{path:'/its-a-me/mario', method:'get'}, {path:'/hello', method:'get'}]
 app.listen(3000)
 
 ```
@@ -89,13 +89,13 @@ router.get('/mario', function (req, res) {
   res.send('Hello, its-a me, Mario!')
 })
 
-app.use({id: 'itsameroute', path:'/itsame'}, router);
+app.use({id: 'its-a-me-route', path:'/its-a-me', data: {hello:'world'}}, router);
 
 app.get('/hello', function (req, res) {
   res.send('Hello World')
 })
 
-console.log(app.mountedRoutes) // prints [{path:'/itsame/mario', method:'get'}, {path:'/hello', method:'get'}]
+console.log(app.mountedRoutes) // prints [{path:'/its-a-me/mario', id: 'its-a-me-route', method:'get', data: {hello:'world'}}, {path:'/hello', method:'get'}]
 app.listen(3000)
 
 ```

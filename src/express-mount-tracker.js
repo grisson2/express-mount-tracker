@@ -61,7 +61,6 @@ module.exports = (router) => {
      */
     const track = (args, method) => {
 
-        
         if (typeof args[0] === 'string') {
             // this cover the case of '[app|router].something(path, middlewares)
             router.mountedRoutes.push({ method: method, path: args[0] });
@@ -100,7 +99,7 @@ module.exports = (router) => {
     /**
      * Redefinition of delete
      */
-    const expressDelete = router.post;
+    const expressDelete = router.delete;
     router.delete = function (...args) {
         // apply tracking
         track(args, 'delete');
@@ -112,7 +111,7 @@ module.exports = (router) => {
     /**
      * Redefinition of put
      */
-    const expressPut = router.post;
+    const expressPut = router.put;
     router.put = function (...args) {
         // apply tracking
         track(args, 'put');
@@ -124,7 +123,7 @@ module.exports = (router) => {
     /**
      * Redefinition of patch
      */
-    const expressPatch = router.post;
+    const expressPatch = router.patch;
     router.patch = function (...args) {
         // apply tracking
         track(args, 'patch');
